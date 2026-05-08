@@ -1,0 +1,34 @@
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.7.0
+python-dotenv>=1.0.1
+python-multipart>=0.0.20
+
+# LLM + orchestration
+google-genai>=1.0.0
+google-generativeai>=0.8.3
+langgraph>=0.2.30
+
+# Local RAG store
+chromadb>=0.5.5
+
+# Multimodal processing
+PyMuPDF>=1.24.9
+librosa>=0.10.2.post1
+soundfile>=0.12.1
+openai-whisper>=20231117
+
+# Edge / quantization + embeddings
+torch>=2.3.0
+torchvision>=0.18.0
+transformers>=4.44.0
+accelerate>=0.33.0
+bitsandbytes>=0.43.3
+
+# UI + utilities
+gradio>=4.44.0
+pillow>=10.4.0
+numpy>=1.26.4
+httpx>=0.27.0
+pytest>=8.0.0
+psutil>=5.9.0

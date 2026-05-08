@@ -1,0 +1,136 @@
+## SAMPLE SYNTHETIC PATHOLOGY REPORTS
+
+### Case 1: NSCLC Adenocarcinoma (NSCLC_01)
+
+**PATHOLOGY REPORT**  
+**Patient**: CASE_NSCLC_001  
+**Specimen**: Left lower lobe wedge resection  
+**Date of Collection**: [DEMO - Synthetic]
+
+**GROSS DESCRIPTION**
+The specimen consists of a 3.2 x 2.8 x 2.1 cm tan-white nodule with irregular borders and some central fibrosis. Margins are inked and appear adequate. No obvious hemorrhage or necrosis.
+
+**MICROSCOPIC DESCRIPTION**
+The tumor is composed of neoplastic cells arranged in acinar and micropapillary patterns, consistent with invasive adenocarcinoma. The nuclei are moderate to large with moderate anisonucleosis. Mitotic figures are present (8-10 per 10 hpf). No mucinous differentiation identified.
+
+Tumor depth: Extends through visceral pleura to adjacent parenchyma.
+
+One hilar lymph node examined: Micrometastasis identified (0.8 cm). Negative margins documented at >5 mm distance.
+
+**MOLECULAR STUDIES**
+- EGFR mutation analysis: Exons 18-21 sequenced. No mutations detected (Wild-type)
+- KRAS mutation analysis: Exon 2, 3, 4 analyzed. G12C mutation DETECTED
+- PD-L1 immunohistochemistry: Tumor proportion score (TPS) = 18% (< 50%)
+- ALK fusion: Negative by FISH
+- ROS1 fusion: Not performed
+
+**IMMUNOHISTOCHEMISTRY**
+CK7: Positive
+CK20: Negative
+TTF-1: Positive
+p63: Negative
+
+**FINAL DIAGNOSIS**
+Invasive Adenocarcinoma, Lung (Left Lower Lobe Wedge Resection)
+- Grade: Moderate differentiation
+- Tumor Size: 3.2 cm
+- Pleural Invasion: Present (visceral)
+- Lymph Node: Hilar involvement present (1/1)
+- Stage (pTNM): pT2b N1 M0
+- Margin Status: Negative (>5mm)
+
+Recommendation: Adjuvant chemotherapy indicated per NCCN guidelines.
+
+---
+
+### Case 2: HER2+ Invasive Ductal Carcinoma (BREAST_01)
+
+**PATHOLOGY REPORT**  
+**Patient**: CASE_BREAST_001  
+**Specimen**: Right breast needle core biopsy (6 cores)  
+**Date of Collection**: [DEMO - Synthetic]
+
+**GROSS DESCRIPTION**
+Six cores of tan-white fibrous tissue with focal areas of pale yellow infiltration consistent with tumor.
+
+**MICROSCOPIC DESCRIPTION**
+The cores contain invasive ductal carcinoma with predominantly solid and cribriform architecture. Marked nuclear pleomorphism, high mitotic activity (20-25 per 10 hpf), and focal comedo-type necrosis present. Tumor size estimated at 2.1 cm based on clinical and imaging correlation.
+
+Perineural invasion: Identified
+Lymphovascular invasion: Present
+
+**IMMUNOHISTOCHEMISTRY & RECEPTOR STATUS**
+- Estrogen Receptor (ER): 90% of nuclei positive (Allred score 8) — POSITIVE
+- Progesterone Receptor (PR): 75% of nuclei positive (Allred score 8) — POSITIVE
+- HER2 by IHC: 3+ (complete membrane staining >30% of tumor cells)
+- Ki-67 proliferation index: 65% (high)
+
+**MOLECULAR STUDIES**
+- HER2 by FISH: HER2/CEP17 ratio = 6.2 (amplified, POSITIVE)
+- Confirmation: Gene copy number >4, consistent with HER2 amplification
+- Germline BRCA1/2: Negative (testing performed)
+
+**FINAL DIAGNOSIS**
+Invasive Ductal Carcinoma, Right Breast
+- Histologic Grade: 3 (High Grade)
+- Estrogen Receptor: Positive (90%)
+- Progesterone Receptor: Positive (75%)
+- HER2 Status: Positive (IHC 3+, FISH confirmed)
+- Ki-67: 65% (high proliferation)
+- Lymphovascular invasion: Present
+- Lymph node status: Sentinel lymph node biopsy needed for staging
+
+Clinical Correlation: Correlate with imaging for complete staging. Consider neoadjuvant systemic therapy given size and grade.
+
+---
+
+### Case 3: MSI-H Adenocarcinoma (CRC_01)
+
+**PATHOLOGY REPORT**  
+**Patient**: CASE_CRC_001  
+**Specimen**: Descending colon partial colectomy  
+**Date of Collection**: [DEMO - Synthetic]
+
+**GROSS DESCRIPTION**
+The specimen consists of 18 cm of colon with a 3.0 cm tan-white infiltrative mass in the mucinous area. The mass is centered 8 cm from the proximal margin and 4 cm from the distal margin. Surface shows ulceration. The adjacent mucosa is unremarkable. Twelve lymph nodes are identified.
+
+**MICROSCOPIC DESCRIPTION**
+The tumor is composed of adenocarcinoma cells with some mucinous differentiation arranged in glandular and infiltrative patterns. Moderate differentiation noted. Tumor invades through the muscularis propria into the subserosal tissue (T3). No lymph node metastases identified in 12 lymph nodes examined (0/12).
+
+Margins: Negative (>5mm)
+Lymphovascular invasion: Not identified
+
+**SPECIAL STUDIES**
+
+Microsatellite Instability (MSI) Testing:
+- Status: MSI-HIGH (Instability detected in multiple microsatellite markers)
+- Mismatch Repair Protein Immunohistochemistry:
+  - MLH1: Lost
+  - PMS2: Lost
+  - MSH2: Preserved
+  - MSH6: Preserved
+
+Pattern suggests Lynch syndrome associated MLH1 and PMS2 mutations. Recommend germline testing.
+
+**MOLECULAR STUDIES**
+- BRAF V600E: Not detected (Wild-type)
+- KRAS: Not performed (sent to reference lab)
+
+**FINAL DIAGNOSIS**
+Adenocarcinoma, Descending Colon (Partial Colectomy)
+- Grade: 2 (Moderate differentiation)
+- Tumor Size: 3.0 cm
+- Depth of Invasion: T3 (muscularis propria and beyond)
+- Lymph Nodes: 0/12 involved
+- Margin Status: Negative (>5mm)
+- Stage (pTNM): pT3 N0 M0 (Stage IIA)
+- MSI Status: MSI-HIGH
+- Mismatch Repair: MLH1 and PMS2 loss (suggestive of Lynch syndrome)
+
+**RECOMMENDATIONS**
+1. Confirm MSI-H status with repeat testing if needed
+2. Strongly recommend germline mismatch repair gene testing (Lynch syndrome evaluation)
+3. Adjuvant chemotherapy: Consider per NCCN guidelines; modest benefit in MSI-H Stage IIA
+4. Surveillance: If chemotherapy deferred, establish regular colonoscopy and imaging surveillance per NCCN CRC surveillance guidelines
+5. Family communication: Lynch syndrome diagnosis has implications for patient's relatives
+

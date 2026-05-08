@@ -1,0 +1,10 @@
+flowchart LR
+  A["PatientIntakeNode"] --> B["PathologyParser"]
+  A --> C["AudioTranscriber"]
+  A --> D["RadiologyAgent"]
+  B --> E["SourceRetrievalNode"]
+  C --> E
+  D --> E
+  E --> F["OncoReasoningNode"]
+  F --> G["SafetyGate"]
+  G --> H["Structured Oncology Report"]

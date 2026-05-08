@@ -1,0 +1,13 @@
+services:
+  oncoboard-edge:
+    build: .
+    ports:
+      - "7860:7860"
+      - "8000:8000"
+    environment:
+      ONCO_LLM_PROVIDER: ${ONCO_LLM_PROVIDER:-offline}
+      GOOGLE_API_KEY: ${GOOGLE_API_KEY:-}
+      ONCO_GEMMA_MODEL: ${ONCO_GEMMA_MODEL:-gemma-4-26b-a4b-it}
+      ONCO_CHROMA_DIR: /app/.oncoedge/chroma
+    volumes:
+      - ./.oncoedge:/app/.oncoedge

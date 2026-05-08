@@ -1,0 +1,195 @@
+{
+  "demo_cases": [
+    {
+      "case_id": "NSCLC_01",
+      "title": "NSCLC Adjuvant Therapy — Low-Resource Clinic",
+      "scenario": "68-year-old former smoker presenting with fatigue and persistent cough. Limited diagnostic infrastructure.",
+      "patient_intake": {
+        "patient_id": "CASE_NSCLC_001",
+        "age": 68,
+        "sex": "male",
+        "primary_site": "lung",
+        "known_diagnosis": "Non-small cell lung cancer (adenocarcinoma)",
+        "clinical_history": "40 pack-year smoking history, quit 5 years ago. Presenting with 6-week progressive cough and constitutional symptoms. No prior cancer history.",
+        "clinician_question": "Patient has completed primary surgical resection (left lower lobe wedge, margins negative). No adjuvant chemotherapy yet offered. What is the evidence-based recommendation for adjuvant therapy given limited biomarker testing capability?"
+      },
+      "pathology_summary": {
+        "histology": "Adenocarcinoma, acinar predominant",
+        "grade": "Moderate differentiation",
+        "stage_tnm": "pT2bN1M0 (Stage IIIA by 8th edition)",
+        "tumor_size_cm": 3.2,
+        "lymph_nodes_involved": "1 of 12 examined",
+        "margins": "Negative, >5mm",
+        "biomarkers_available": {
+          "EGFR_mutation": "Not detected (wild-type)",
+          "KRAS_mutation": "Positive (G12C)",
+          "PD_L1_TPS": "18%",
+          "ALK_fusion": "Negative",
+          "ROS1_fusion": "Not tested"
+        },
+        "biomarkers_missing": ["MSI-H", "TMB", "ROS1", "MET exon 14"]
+      },
+      "imaging_summary": {
+        "modality": "CT chest/abdomen/pelvis with contrast",
+        "primary_tumor": "3.2 cm left lower lobe mass, heterogeneous enhancement, irregular borders",
+        "lymph_nodes": "1 cm left hilar lymph node (involved), no other suspicious nodes",
+        "distant_metastases": "None detected",
+        "pleural_effusion": "No",
+        "notes": "Post-surgical changes consistent with wedge resection. No obvious recurrence."
+      },
+      "voice_note_transcript": "Patient is otherwise fit, good performance status. Asking about chemotherapy. Wife is very concerned about recurrence risk. Patient prefers oral medication if available. Also asking whether we should wait for more biomarker testing before deciding on treatment.",
+      "expected_ai_output_summary": {
+        "confidence": 0.82,
+        "key_findings": [
+          "Stage IIIA NSCLC post-resection with nodal involvement (N1)",
+          "KRAS G12C mutation identified (targetable with sotorasib/adagrasib)",
+          "PD-L1 18% (low expression, chemotherapy likely preferred over single-agent ICI)",
+          "Adjuvant chemotherapy indicated per NCCN guidelines (Level 1 evidence)",
+          "KRAS G12C targeted therapy could be considered if available"
+        ],
+        "recommendations": [
+          "Adjuvant platinum-pemetrexed chemotherapy preferred (4 cycles)",
+          "Consider sequential KRAS G12C inhibitor (sotorasib) if available in local setting",
+          "Follow-up biomarker testing (MSI-H, TMB) recommended to guide future surveillance/therapy",
+          "Clinical trial enrollment for KRAS-mutant NSCLC if accessible"
+        ],
+        "red_flags": [
+          "Nodal involvement (N1) increases recurrence risk",
+          "PD-L1 18% does not support single-agent checkpoint inhibition",
+          "Limited biomarker panel — missing MSI/TMB could impact prognosis"
+        ],
+        "evidence_sources_count": 5,
+        "cited_guidelines": ["NCCN NSCLC 2024", "ESMO NSCLC 2023", "ASCO KRAS Workshop"],
+        "next_steps": "Initiate adjuvant chemotherapy; refer to oncology for KRAS-targeted therapy discussion if available"
+      }
+    },
+    {
+      "case_id": "BREAST_01",
+      "title": "HER2+ Breast Cancer — Neoadjuvant Planning",
+      "scenario": "52-year-old post-menopausal woman with locally advanced HER2-positive breast cancer. Regional hospital with advanced molecular testing.",
+      "patient_intake": {
+        "patient_id": "CASE_BREAST_001",
+        "age": 52,
+        "sex": "female",
+        "primary_site": "breast",
+        "known_diagnosis": "Invasive ductal carcinoma, HER2-positive, Stage IIIA",
+        "clinical_history": "Presented with 2.1 cm palpable mass in right upper quadrant. No prior cancer history. Negative for BRCA1/2. Post-menopausal, no systemic therapy yet.",
+        "clinician_question": "Recently diagnosed with HER2+ invasive ductal carcinoma. Patient is concerned about recurrence risk and asking specifically about trastuzumab-based neoadjuvant therapy. Would this be appropriate? What is the evidence-based approach for this stage/subtype?"
+      },
+      "pathology_summary": {
+        "histology": "Invasive ductal carcinoma (IDC), no special type",
+        "grade": "Grade 3 (high grade)",
+        "stage_tnm": "cT2N1M0 (Stage IIIA by 8th edition)",
+        "tumor_size_cm": 2.1,
+        "lymph_nodes_involved": "1 of 12 sentinel nodes examined",
+        "margins": "Not yet assessed (pre-treatment)",
+        "biomarkers_available": {
+          "ER_status": "Positive (90% nuclei)",
+          "PR_status": "Positive (75% nuclei)",
+          "HER2_status": "IHC 3+ (FISH confirmed, HER2:CEP17 = 6.2)",
+          "Ki67_index": "65%",
+          "BRCA_mutation": "Negative (germline testing)"
+        },
+        "biomarkers_missing": ["Genomic grade index", "Multigene signature testing"]
+      },
+      "imaging_summary": {
+        "modality": "Breast MRI with contrast",
+        "primary_tumor": "2.1 cm heterogeneous enhancing mass in right upper quadrant, spiculated margins",
+        "lymph_nodes": "1 cm right axillary node (likely involved), no supraclavicular involvement",
+        "distant_metastases": "None on staging CT",
+        "notes": "Clip placed in tumor for post-treatment identification. No skin involvement."
+      },
+      "voice_note_transcript": "Patient is very motivated and wants most aggressive treatment available. Asking if trastuzumab will definitely prevent recurrence. Concerned about side effects. Partner is supportive. Patient is otherwise healthy, good cardiac function.",
+      "expected_ai_output_summary": {
+        "confidence": 0.88,
+        "key_findings": [
+          "HER2+ (IHC 3+, FISH confirmed) invasive ductal carcinoma",
+          "Hormone receptor positive (ER/PR+), suggesting luminal HER2 subtype",
+          "High-grade (Grade 3), high proliferation (Ki67 65%)",
+          "Regional nodal involvement (N1) — neoadjuvant therapy strongly indicated",
+          "No distant metastases detected"
+        ],
+        "recommendations": [
+          "Trastuzumab-based neoadjuvant therapy is standard-of-care (strong Level 1 evidence)",
+          "Consider dual HER2 targeting (trastuzumab + pertuzumab per CLEOPATRA era data)",
+          "Add taxane chemotherapy (docetaxel preferred over paclitaxel for this setting)",
+          "Adjuvant endocrine therapy (tamoxifen or AI) post-surgery + continued trastuzumab",
+          "Consider de-escalation if pathologic complete response (pCR) achieved"
+        ],
+        "red_flags": [
+          "Grade 3 tumor with high Ki67 — aggressive biology",
+          "Nodal involvement increases recurrence risk if not adequately treated",
+          "Cardiac function must be monitored throughout trastuzumab therapy (baseline echo/MUGA recommended)"
+        ],
+        "evidence_sources_count": 6,
+        "cited_guidelines": ["NCCN Breast 2024", "ASCO HER2+ BC 2023", "St. Gallen 2023"],
+        "next_steps": "Baseline cardiac assessment; initiate taxane + trastuzumab + pertuzumab neoadjuvant regimen; surgical planning after response assessment"
+      }
+    },
+    {
+      "case_id": "CRC_01",
+      "title": "MSI-High CRC — Adjuvant vs. Surveillance Strategy",
+      "scenario": "61-year-old male with stage IIA microsatellite instability-high colorectal cancer post-resection. Resource-limited setting, considering surveillance vs. adjuvant therapy.",
+      "patient_intake": {
+        "patient_id": "CASE_CRC_001",
+        "age": 61,
+        "sex": "male",
+        "primary_site": "colon",
+        "known_diagnosis": "Adenocarcinoma of descending colon, MSI-H, Stage IIA",
+        "clinical_history": "Presented with iron-deficiency anemia and hematochezia. Colonoscopy found 3 cm mass. Completed partial colectomy (D2 lymphadenectomy). No pre-treatment chemotherapy. Family history significant for Lynch syndrome screening (1 affected relative, not confirmed).",
+        "clinician_question": "Post-resection imaging and labs normal. Pathology confirms MSI-H status. Patient is asking: Do I need adjuvant chemotherapy or can we just watch and wait? Resources are limited in our clinic. What is the evidence-based guidance for MSI-H Stage IIA?"
+      },
+      "pathology_summary": {
+        "histology": "Adenocarcinoma, mucinous features",
+        "grade": "Grade 2 (moderate differentiation)",
+        "stage_tnm": "pT3N0M0 (Stage IIA by 8th edition)",
+        "tumor_size_cm": 3.0,
+        "lymph_nodes_examined": 12,
+        "lymph_nodes_involved": 0,
+        "margins": "Negative, >5mm",
+        "biomarkers_available": {
+          "MSI_status": "MSI-H (mismatch repair deficient)",
+          "dMMR": "Positive (MLH1 and PMS2 loss)",
+          "BRAF_mutation": "Not detected (wild-type)",
+          "KRAS_mutation": "Not performed",
+          "Lynch_syndrome_risk": "Requires germline testing (family history)"
+        },
+        "biomarkers_missing": ["KRAS", "TP53", "Immunotherapy predictors"]
+      },
+      "imaging_summary": {
+        "modality": "CT abdomen/pelvis with contrast",
+        "primary_tumor": "Post-surgical changes, no residual mass visualized",
+        "lymph_nodes": "No suspicious lymph nodes identified (largest <1 cm)",
+        "liver": "No metastases",
+        "peritoneum": "No ascites or peritoneal involvement",
+        "notes": "Stapled anastomosis in place, no leak. CEA normal."
+      },
+      "voice_note_transcript": "Patient prefers surveillance if acceptable from oncology perspective — he has significant work responsibilities and worries about chemotherapy toxicity. Wife advocates for 'whatever is best.' No prior chemotherapy. Good performance status. Concerned about Lynch syndrome implications for screening of family members.",
+      "expected_ai_output_summary": {
+        "confidence": 0.79,
+        "key_findings": [
+          "MSI-H (dMMR confirmed) Stage IIA colon cancer — favorable prognosis",
+          "No lymph node involvement (N0) — lower recurrence risk",
+          "MSI-H is independent positive prognostic factor, associated with better outcomes",
+          "MSI-H status makes patient eligible for immunotherapy if recurrence occurs",
+          "Lynch syndrome screening indicated (family history positive, MLH1/PMS2 loss pattern suggests germline)"
+        ],
+        "recommendations": [
+          "Stage IIA MSI-H: Adjuvant chemotherapy may be deferred in selected cases (NCCN Category 2B)",
+          "Surveillance is reasonable option if patient well-informed about recurrence risk (~10-15%)",
+          "If chemotherapy preferred: 5-FU or FOLFOX reasonable, but benefit modest in MSI-H",
+          "Immunotherapy (checkpoint inhibition) NOT recommended adjuvantly, but important if recurrence develops",
+          "Lynch syndrome germline testing strongly recommended — impacts patient and family screening"
+        ],
+        "red_flags": [
+          "T3N0 status (transmural invasion) does increase local recurrence risk slightly",
+          "Lynch syndrome family history — requires genetic counseling and family communication",
+          "If surveillance chosen, must emphasize compliance with surveillance colonoscopy/imaging"
+        ],
+        "evidence_sources_count": 5,
+        "cited_guidelines": ["NCCN CRC 2024", "ASCO Adjuvant CRC 2023", "ASCO Lynch Syndrome 2024"],
+        "next_steps": "Discuss surveillance vs. adjuvant chemotherapy with patient preferences; order germline Lynch testing; arrange genetic counseling; establish follow-up schedule (imaging + colonoscopy per NCCN)"
+      }
+    }
+  ]
+}

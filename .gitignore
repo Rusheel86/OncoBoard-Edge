@@ -1,0 +1,17 @@
+.env
+__pycache__/
+.pytest_cache/
+pytest-cache-files-*/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+venv/
+.env.local
+node_modules/
+wandb/
+outputs/
+checkpoints/
+.DS_Store
+.oncoedge/

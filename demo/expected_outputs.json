@@ -1,0 +1,195 @@
+{
+  "demo_expected_outputs": [
+    {
+      "case_id": "NSCLC_01",
+      "expected_report": {
+        "confidence_score": 0.82,
+        "case_summary": "68M with Stage IIIA (pT2bN1M0) adenocarcinoma of left lower lobe s/p wedge resection. KRAS G12C+ , PD-L1 TPS 18%, EGFR wild-type. Adjuvant therapy indicated.",
+        "key_findings": [
+          "Pathologically confirmed N1 disease (1/12 hilar node involved) → Stage IIIA post-resection",
+          "KRAS G12C mutation identified (targetable with sotorasib/adagrasib)",
+          "PD-L1 18% expression (below 50% threshold for single-agent checkpoint inhibition)",
+          "Negative margins, adequate lymph node sampling (12 nodes)",
+          "No distant metastases detected on imaging"
+        ],
+        "assessment": "Patient with high-risk NSCLC (Stage IIIA, N1) requires adjuvant systemic therapy. KRAS G12C status opens potential for targeted approach.",
+        "recommendations": [
+          {
+            "priority": "PRIMARY",
+            "text": "Adjuvant platinum-based doublet (platinum + pemetrexed for nonsquamous histology)",
+            "details": "4 cycles recommended per NCCN Category 1 evidence. Expected median OS benefit ~10-15 months.",
+            "evidence_level": "Level 1 (RCTs: LACE, JMDB trials)"
+          },
+          {
+            "priority": "CONSIDER",
+            "text": "Sequential or concurrent KRAS G12C inhibitor (sotorasib/adagrasib) following chemotherapy",
+            "details": "If available in local setting. CodeBreaK and KRYSTAL trials show benefit in metastatic KRAS-mutant NSCLC; adjuvant data emerging.",
+            "evidence_level": "Level 2B (emerging adjuvant data)"
+          },
+          {
+            "priority": "ROUTINE",
+            "text": "Complete biomarker panel (MSI-H, TMB) for future surveillance/immunotherapy guidance",
+            "details": "Will help stratify recurrence risk and inform immunotherapy eligibility if progression occurs.",
+            "evidence_level": "Standard of care"
+          }
+        ],
+        "treatment_considerations": {
+          "chemotherapy": "Cisplatin 75 mg/m² + Pemetrexed 500 mg/m² every 3 weeks x 4 cycles",
+          "toxicity_monitoring": "Baseline renal function, hearing (for cisplatin). Monitor for nausea, thrombocytopenia, neuropathy.",
+          "alternatives": "Carboplatin if cisplatin contraindicated",
+          "immunotherapy": "Not recommended adjuvantly at this time; reserve for metastatic/recurrent disease"
+        },
+        "red_flags_and_uncertainties": [
+          "🚨 CRITICAL: Nodal involvement (N1) associated with 40-50% risk of distant recurrence even with adjuvant chemotherapy",
+          "⚠️ UNCERTAIN: Limited evidence for KRAS-targeted adjuvant therapy — recommend oncology consultation",
+          "⚠️ GAP: MSI-H and TMB not tested — would refine prognosis and guide future surveillance"
+        ],
+        "next_steps": [
+          "Refer to medical oncology for adjuvant chemotherapy planning",
+          "Confirm performance status (ECOG 0-1 required)",
+          "Baseline labs: CBC, CMP, LFTs, creatinine clearance",
+          "Baseline hearing assessment if cisplatin planned",
+          "Discuss KRAS-targeted therapy availability in region",
+          "Establish follow-up schedule (CT + labs every 3-6 months x 2-3 years)"
+        ]
+      }
+    },
+    {
+      "case_id": "BREAST_01",
+      "expected_report": {
+        "confidence_score": 0.88,
+        "case_summary": "52F post-menopausal with cT2N1M0 (Stage IIIA) luminal HER2+ invasive ductal carcinoma, Grade 3. ER/PR+, HER2 IHC 3+ (FISH confirmed), Ki-67 65%. Neoadjuvant HER2-targeted + chemotherapy indicated.",
+        "key_findings": [
+          "HER2 over-expression confirmed (IHC 3+, FISH ratio 6.2)",
+          "Hormone receptor co-expression (ER 90%, PR 75%) → Luminal HER2 subtype, high-risk",
+          "Grade 3 with high proliferation (Ki-67 65%) → Aggressive biology",
+          "Regional nodal involvement (cN1) → Locally advanced disease",
+          "Lymphovascular invasion present in biopsy"
+        ],
+        "assessment": "Locally advanced HER2+ breast cancer with favorable prognosis if treated adequately. Neoadjuvant dual HER2 targeting + chemotherapy is standard approach.",
+        "recommendations": [
+          {
+            "priority": "PRIMARY",
+            "text": "Neoadjuvant trastuzumab + pertuzumab + taxane chemotherapy",
+            "details": "Docetaxel 75 mg/m² + Trastuzumab (loading 8mg/kg then 6mg/kg) + Pertuzumab (loading 840mg then 420mg), all every 3 weeks x 4-6 cycles",
+            "evidence_level": "Level 1 (CLEOPATRA, TRYPHAENA, KRISTINE trials)"
+          },
+          {
+            "priority": "STANDARD",
+            "text": "Cardiac monitoring before and during therapy (baseline echo/MUGA, repeat after 2 cycles)",
+            "details": "HER2-targeted therapy (especially dual targeting) carries ~8-10% risk of cardiac dysfunction. Ensure LVEF ≥50% before starting.",
+            "evidence_level": "Standard safety protocol"
+          },
+          {
+            "priority": "FOLLOWUP",
+            "text": "Surgical resection 4-6 weeks after completing neoadjuvant therapy",
+            "details": "Breast-conserving surgery vs. mastectomy per patient preference and response. Sentinel lymph node ± axillary dissection based on residual disease.",
+            "evidence_level": "Standard"
+          },
+          {
+            "priority": "ADJUVANT",
+            "text": "If pathologic complete response (pCR): Continue trastuzumab for 12 months total, add endocrine therapy (tamoxifen or AI) for 10 years",
+            "details": "pCR improves long-term outcomes significantly. Consider de-escalation if excellent response.",
+            "evidence_level": "Level 1 (KEYNOTE-522, KRISTINE)"
+          },
+          {
+            "priority": "ADJUVANT_ALT",
+            "text": "If residual disease after neoadjuvant: Consider additional systemic therapy or clinical trial",
+            "details": "T-DM1 (ado-trastuzumab emtansine) or other CDCs under investigation in residual disease setting.",
+            "evidence_level": "Emerging (KATHERINE trial supports T-DM1)"
+          }
+        ],
+        "treatment_considerations": {
+          "regimen": "Docetaxel 75mg/m² + Trastuzumab + Pertuzumab IV every 3 weeks",
+          "cycles": "4-6 cycles depending on response and tolerability",
+          "toxicity_monitoring": "Cardiac function (LVEF), CBC, nausea, peripheral neuropathy, hand-foot skin reaction (from taxane)",
+          "hormone_sensitivity": "Patient is ER/PR+; adjuvant endocrine therapy is essential post-surgery"
+        },
+        "red_flags_and_uncertainties": [
+          "🚨 CRITICAL: Cardiac dysfunction risk with dual HER2 targeting — baseline echo mandatory",
+          "🚨 CRITICAL: High-grade, aggressive tumor — requires intensive systemic therapy",
+          "⚠️ NOTE: Grade 3 + Ki-67 65% suggests poor prognosis if undertreated; do not de-escalate without strong pCR",
+          "⚠️ POST-MENOPAUSAL: Will require endocrine therapy indefinitely (tamoxifen or letrozole/anastrozole + AI)"
+        ],
+        "next_steps": [
+          "Baseline cardiac assessment (echo, LVEF measurement, EKG)",
+          "Confirm performance status (ECOG 0-1)",
+          "Labs: CBC, CMP, LFTs, HER2 status confirmation",
+          "Multidisciplinary tumor board discussion (surgery, oncology, radiology)",
+          "Initiate neoadjuvant chemotherapy + trastuzumab + pertuzumab per above regimen",
+          "Restaging imaging (CT chest/abdomen/pelvis) after 2-3 cycles to assess response",
+          "Genetic counseling regarding BRCA negative status and implications"
+        ]
+      }
+    },
+    {
+      "case_id": "CRC_01",
+      "expected_report": {
+        "confidence_score": 0.79,
+        "case_summary": "61M with pT3N0M0 (Stage IIA) adenocarcinoma of descending colon s/p resection. MSI-HIGH, dMMR (MLH1/PMS2 loss) suggesting Lynch syndrome. BRAF wild-type.",
+        "key_findings": [
+          "MSI-HIGH status confirmed (microsatellite instability on molecular testing)",
+          "Mismatch repair protein loss pattern (MLH1-, PMS2-) consistent with Lynch syndrome",
+          "Nodal involvement: 0/12 negative (favorable N0 status)",
+          "T3 disease (transmural invasion, subserosal extension)",
+          "No lymphovascular invasion identified",
+          "BRAF wild-type (typical of Lynch syndrome, not sporadic MSI-H)"
+        ],
+        "assessment": "Stage IIA CRC with MSI-H status. Prognosis is better than stage-matched MMR-proficient tumors. Adjuvant chemotherapy may be deferred in selected, compliant patients. Lynch syndrome workup essential.",
+        "recommendations": [
+          {
+            "priority": "PRIMARY_OPTION_1",
+            "text": "SURVEILLANCE strategy (may omit adjuvant chemotherapy)",
+            "details": "Stage IIA MSI-H disease has low recurrence risk (~10-15% vs. ~20-25% for MMR-proficient). Observation is Category 2B per NCCN.",
+            "evidence_level": "Level 2B (retrospective data, QUASAR 2 ongoing)",
+            "if_chosen": "Patient must be counseled on recurrence risk and strict compliance with surveillance required"
+          },
+          {
+            "priority": "PRIMARY_OPTION_2",
+            "text": "Adjuvant chemotherapy with 5-FU or FOLFOX (4 cycles)",
+            "details": "If patient prefers treatment or has additional risk factors (high-grade, lymphovascular invasion, inadequate lymph node sampling). Benefit in MSI-H modest compared to MMR-proficient.",
+            "evidence_level": "Level 2B (retrospective subset analyses)",
+            "if_chosen": "Offers 2-5% recurrence risk reduction but with toxicity; patient preference crucial"
+          },
+          {
+            "priority": "NOT_RECOMMENDED",
+            "text": "Adjuvant checkpoint inhibition",
+            "details": "NOT recommended in adjuvant setting currently (NCCN). Reserve immunotherapy for metastatic/recurrent disease where benefit is clear.",
+            "evidence_level": "Standard (trials ongoing but not FDA-approved adjuvantly yet)"
+          }
+        ],
+        "lynch_syndrome_workup": {
+          "urgency": "CRITICAL — MLH1/PMS2 loss pattern highly suspicious for Lynch syndrome",
+          "testing": "Germline mismatch repair gene sequencing (MLH1, MSH2, MSH6, PMS2, EPCAM)",
+          "timeline": "Complete within 4 weeks post-diagnosis",
+          "family_implications": "If confirmed, all first-degree relatives require genetic counseling and increased surveillance (colonoscopy every 2-3 years starting age 20-25)"
+        },
+        "surveillance_protocol_if_no_adjuvant": [
+          "Colonoscopy: 1 year post-op, then every 3-5 years (or per Lynch protocol if confirmed)",
+          "Imaging (CT abdomen/pelvis ± chest): Every 6 months x 2-3 years, then annually",
+          "Labs (CEA): Consider baseline and at each imaging; trends may guide workup",
+          "Gynecologic screening if applicable (ovarian cancer risk elevated in Lynch)"
+        ],
+        "surveillance_protocol_if_adjuvant_chosen": [
+          "Same as above after chemotherapy completion",
+          "Chemotherapy: 5-FU/LV or mFOLFOX6 x 4 cycles"
+        ],
+        "red_flags_and_uncertainties": [
+          "🚨 CRITICAL: Lynch syndrome pattern identified — germline testing MUST be arranged immediately",
+          "🚨 CRITICAL: Family members at risk — proband diagnosis must be communicated to relatives",
+          "⚠️ UNCERTAIN: T3N0 is borderline for adjuvant recommendation — patient preference paramount",
+          "⚠️ NOTE: MSI-H tumors have different biology; standard adjuvant chemotherapy benefit is reduced compared to MSI-stable CRC"
+        ],
+        "next_steps": [
+          "Urgent referral to medical oncology for treatment discussion (surveillance vs. adjuvant)",
+          "Arrange genetic counseling and germline mismatch repair testing",
+          "If Lynch confirmed: Notify patient's relatives, recommend their genetic evaluation",
+          "Establish surveillance schedule per NCCN CRC Guidelines (increased frequency for Lynch)",
+          "Baseline labs: CEA, LFTs, renal function",
+          "Patient education: Discuss options, recurrence risk, surveillance compliance, Lynch implications",
+          "Gynecologic/urologic screening per Lynch protocol if applicable"
+        ]
+      }
+    }
+  ]
+}

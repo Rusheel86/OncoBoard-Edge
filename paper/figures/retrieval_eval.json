@@ -1,0 +1,293 @@
+[
+  {
+    "expected_chunk_ids": [
+      "demo_lung_biomarker_001"
+    ],
+    "retrieved_chunks": [
+      {
+        "doc_id": "demo_guideline_lung",
+        "chunk_id": "demo_lung_biomarker_001",
+        "source_title": "Demo Oncology Guideline Corpus",
+        "text": "For advanced non-small cell lung cancer, actionable biomarker testing commonly includes EGFR, ALK, ROS1, BRAF, MET exon 14, RET, NTRK, KRAS G12C, and PD-L1 where available. Treatment selection should wait for critical driver results when clinically feasible.",
+        "score": 0.25,
+        "metadata": {
+          "doc_id": "demo_guideline_lung",
+          "chunk_id": "demo_lung_biomarker_001",
+          "source_title": "Demo Oncology Guideline Corpus",
+          "section": "NSCLC biomarkers",
+          "page": 3,
+          "source_type": "guideline"
+        }
+      },
+      {
+        "doc_id": "demo_safety",
+        "chunk_id": "demo_safety_001",
+        "source_title": "Demo Oncology Safety Notes",
+        "text": "When key staging, pathology, performance status, organ function, or biomarker data are missing, an oncology decision-support system should label uncertainty and recommend obtaining the missing data rather than presenting unsupported treatment recommendations.",
+        "score": 0.25,
+        "metadata": {
+          "doc_id": "demo_safety",
+          "chunk_id": "demo_safety_001",
+          "source_title": "Demo Oncology Safety Notes",
+          "section": "Grounding and uncertainty",
+          "page": 1,
+          "source_type": "safety"
+        }
+      },
+      {
+        "doc_id": "demo_guideline_breast",
+        "chunk_id": "demo_breast_er_001",
+        "source_title": "Demo Oncology Guideline Corpus",
+        "text": "For hormone receptor positive breast cancer, endocrine therapy is a core systemic treatment consideration. HER2 status, menopausal status, disease stage, recurrence risk, and patient comorbidities should guide regimen selection.",
+        "score": 0.1667,
+        "metadata": {
+          "doc_id": "demo_guideline_breast",
+          "chunk_id": "demo_breast_er_001",
+          "source_title": "Demo Oncology Guideline Corpus",
+          "section": "Breast biomarkers",
+          "page": 1,
+          "source_type": "guideline"
+        }
+      },
+      {
+        "doc_id": "demo_guideline_breast",
+        "chunk_id": "demo_breast_her2_001",
+        "source_title": "Demo Oncology Guideline Corpus",
+        "text": "HER2 positive breast cancer generally requires evaluation for anti-HER2 therapy eligibility. Discordant or equivocal HER2 testing should be resolved with validated repeat or reflex testing before treatment decisions.",
+        "score": 0.1667,
+        "metadata": {
+          "doc_id": "demo_guideline_breast",
+          "chunk_id": "demo_breast_her2_001",
+          "source_title": "Demo Oncology Guideline Corpus",
+          "section": "HER2 interpretation",
+          "page": 2,
+          "source_type": "guideline"
+        }
+      },
+      {
+        "doc_id": "demo_guideline_colorectal",
+        "chunk_id": "demo_colorectal_msi_001",
+        "source_title": "Demo Oncology Guideline Corpus",
+        "text": "In colorectal cancer, mismatch repair or MSI testing supports Lynch syndrome screening and may guide immunotherapy decisions in advanced disease. RAS and BRAF status are important for targeted therapy planning.",
+        "score": 0.1667,
+        "metadata": {
+          "doc_id": "demo_guideline_colorectal",
+          "chunk_id": "demo_colorectal_msi_001",
+          "source_title": "Demo Oncology Guideline Corpus",
+          "section": "Colorectal biomarkers",
+          "page": 4,
+          "source_type": "guideline"
+        }
+      },
+      {
+        "doc_id": "demo_pubmed_style",
+        "chunk_id": "demo_pubmed_grounding_001",
+        "source_title": "Demo PubMed-style Retrieval Schema",
+        "text": "PubMed-style evidence abstracts should be represented with title, year, study type, population, intervention or marker, endpoint, and limitations so downstream reasoning can separate direct evidence from clinical inference.",
+        "score": 0.0,
+        "metadata": {
+          "doc_id": "demo_pubmed_style",
+          "chunk_id": "demo_pubmed_grounding_001",
+          "source_title": "Demo PubMed-style Retrieval Schema",
+          "section": "Evidence metadata",
+          "page": 1,
+          "source_type": "pubmed_style"
+        }
+      }
+    ]
+  },
+  {
+    "expected_chunk_ids": [
+      "demo_breast_er_001"
+    ],
+    "retrieved_chunks": [
+      {
+        "doc_id": "demo_guideline_breast",
+        "chunk_id": "demo_breast_her2_001",
+        "source_title": "Demo Oncology Guideline Corpus",
+        "text": "HER2 positive breast cancer generally requires evaluation for anti-HER2 therapy eligibility. Discordant or equivocal HER2 testing should be resolved with validated repeat or reflex testing before treatment decisions.",
+        "score": 0.4,
+        "metadata": {
+          "doc_id": "demo_guideline_breast",
+          "chunk_id": "demo_breast_her2_001",
+          "source_title": "Demo Oncology Guideline Corpus",
+          "section": "HER2 interpretation",
+          "page": 2,
+          "source_type": "guideline"
+        }
+      },
+      {
+        "doc_id": "demo_guideline_breast",
+        "chunk_id": "demo_breast_er_001",
+        "source_title": "Demo Oncology Guideline Corpus",
+        "text": "For hormone receptor positive breast cancer, endocrine therapy is a core systemic treatment consideration. HER2 status, menopausal status, disease stage, recurrence risk, and patient comorbidities should guide regimen selection.",
+        "score": 0.2667,
+        "metadata": {
+          "doc_id": "demo_guideline_breast",
+          "chunk_id": "demo_breast_er_001",
+          "source_title": "Demo Oncology Guideline Corpus",
+          "section": "Breast biomarkers",
+          "page": 1,
+          "source_type": "guideline"
+        }
+      },
+      {
+        "doc_id": "demo_pubmed_style",
+        "chunk_id": "demo_pubmed_grounding_001",
+        "source_title": "Demo PubMed-style Retrieval Schema",
+        "text": "PubMed-style evidence abstracts should be represented with title, year, study type, population, intervention or marker, endpoint, and limitations so downstream reasoning can separate direct evidence from clinical inference.",
+        "score": 0.1333,
+        "metadata": {
+          "doc_id": "demo_pubmed_style",
+          "chunk_id": "demo_pubmed_grounding_001",
+          "source_title": "Demo PubMed-style Retrieval Schema",
+          "section": "Evidence metadata",
+          "page": 1,
+          "source_type": "pubmed_style"
+        }
+      },
+      {
+        "doc_id": "demo_guideline_lung",
+        "chunk_id": "demo_lung_biomarker_001",
+        "source_title": "Demo Oncology Guideline Corpus",
+        "text": "For advanced non-small cell lung cancer, actionable biomarker testing commonly includes EGFR, ALK, ROS1, BRAF, MET exon 14, RET, NTRK, KRAS G12C, and PD-L1 where available. Treatment selection should wait for critical driver results when clinically feasible.",
+        "score": 0.0667,
+        "metadata": {
+          "doc_id": "demo_guideline_lung",
+          "chunk_id": "demo_lung_biomarker_001",
+          "source_title": "Demo Oncology Guideline Corpus",
+          "section": "NSCLC biomarkers",
+          "page": 3,
+          "source_type": "guideline"
+        }
+      },
+      {
+        "doc_id": "demo_safety",
+        "chunk_id": "demo_safety_001",
+        "source_title": "Demo Oncology Safety Notes",
+        "text": "When key staging, pathology, performance status, organ function, or biomarker data are missing, an oncology decision-support system should label uncertainty and recommend obtaining the missing data rather than presenting unsupported treatment recommendations.",
+        "score": 0.0667,
+        "metadata": {
+          "doc_id": "demo_safety",
+          "chunk_id": "demo_safety_001",
+          "source_title": "Demo Oncology Safety Notes",
+          "section": "Grounding and uncertainty",
+          "page": 1,
+          "source_type": "safety"
+        }
+      },
+      {
+        "doc_id": "demo_guideline_colorectal",
+        "chunk_id": "demo_colorectal_msi_001",
+        "source_title": "Demo Oncology Guideline Corpus",
+        "text": "In colorectal cancer, mismatch repair or MSI testing supports Lynch syndrome screening and may guide immunotherapy decisions in advanced disease. RAS and BRAF status are important for targeted therapy planning.",
+        "score": 0.0,
+        "metadata": {
+          "doc_id": "demo_guideline_colorectal",
+          "chunk_id": "demo_colorectal_msi_001",
+          "source_title": "Demo Oncology Guideline Corpus",
+          "section": "Colorectal biomarkers",
+          "page": 4,
+          "source_type": "guideline"
+        }
+      }
+    ]
+  },
+  {
+    "expected_chunk_ids": [
+      "demo_colorectal_msi_001"
+    ],
+    "retrieved_chunks": [
+      {
+        "doc_id": "demo_guideline_lung",
+        "chunk_id": "demo_lung_biomarker_001",
+        "source_title": "Demo Oncology Guideline Corpus",
+        "text": "For advanced non-small cell lung cancer, actionable biomarker testing commonly includes EGFR, ALK, ROS1, BRAF, MET exon 14, RET, NTRK, KRAS G12C, and PD-L1 where available. Treatment selection should wait for critical driver results when clinically feasible.",
+        "score": 0.25,
+        "metadata": {
+          "doc_id": "demo_guideline_lung",
+          "chunk_id": "demo_lung_biomarker_001",
+          "source_title": "Demo Oncology Guideline Corpus",
+          "section": "NSCLC biomarkers",
+          "page": 3,
+          "source_type": "guideline"
+        }
+      },
+      {
+        "doc_id": "demo_guideline_colorectal",
+        "chunk_id": "demo_colorectal_msi_001",
+        "source_title": "Demo Oncology Guideline Corpus",
+        "text": "In colorectal cancer, mismatch repair or MSI testing supports Lynch syndrome screening and may guide immunotherapy decisions in advanced disease. RAS and BRAF status are important for targeted therapy planning.",
+        "score": 0.25,
+        "metadata": {
+          "doc_id": "demo_guideline_colorectal",
+          "chunk_id": "demo_colorectal_msi_001",
+          "source_title": "Demo Oncology Guideline Corpus",
+          "section": "Colorectal biomarkers",
+          "page": 4,
+          "source_type": "guideline"
+        }
+      },
+      {
+        "doc_id": "demo_guideline_breast",
+        "chunk_id": "demo_breast_er_001",
+        "source_title": "Demo Oncology Guideline Corpus",
+        "text": "For hormone receptor positive breast cancer, endocrine therapy is a core systemic treatment consideration. HER2 status, menopausal status, disease stage, recurrence risk, and patient comorbidities should guide regimen selection.",
+        "score": 0.1667,
+        "metadata": {
+          "doc_id": "demo_guideline_breast",
+          "chunk_id": "demo_breast_er_001",
+          "source_title": "Demo Oncology Guideline Corpus",
+          "section": "Breast biomarkers",
+          "page": 1,
+          "source_type": "guideline"
+        }
+      },
+      {
+        "doc_id": "demo_guideline_breast",
+        "chunk_id": "demo_breast_her2_001",
+        "source_title": "Demo Oncology Guideline Corpus",
+        "text": "HER2 positive breast cancer generally requires evaluation for anti-HER2 therapy eligibility. Discordant or equivocal HER2 testing should be resolved with validated repeat or reflex testing before treatment decisions.",
+        "score": 0.0833,
+        "metadata": {
+          "doc_id": "demo_guideline_breast",
+          "chunk_id": "demo_breast_her2_001",
+          "source_title": "Demo Oncology Guideline Corpus",
+          "section": "HER2 interpretation",
+          "page": 2,
+          "source_type": "guideline"
+        }
+      },
+      {
+        "doc_id": "demo_safety",
+        "chunk_id": "demo_safety_001",
+        "source_title": "Demo Oncology Safety Notes",
+        "text": "When key staging, pathology, performance status, organ function, or biomarker data are missing, an oncology decision-support system should label uncertainty and recommend obtaining the missing data rather than presenting unsupported treatment recommendations.",
+        "score": 0.0833,
+        "metadata": {
+          "doc_id": "demo_safety",
+          "chunk_id": "demo_safety_001",
+          "source_title": "Demo Oncology Safety Notes",
+          "section": "Grounding and uncertainty",
+          "page": 1,
+          "source_type": "safety"
+        }
+      },
+      {
+        "doc_id": "demo_pubmed_style",
+        "chunk_id": "demo_pubmed_grounding_001",
+        "source_title": "Demo PubMed-style Retrieval Schema",
+        "text": "PubMed-style evidence abstracts should be represented with title, year, study type, population, intervention or marker, endpoint, and limitations so downstream reasoning can separate direct evidence from clinical inference.",
+        "score": 0.0,
+        "metadata": {
+          "doc_id": "demo_pubmed_style",
+          "chunk_id": "demo_pubmed_grounding_001",
+          "source_title": "Demo PubMed-style Retrieval Schema",
+          "section": "Evidence metadata",
+          "page": 1,
+          "source_type": "pubmed_style"
+        }
+      }
+    ]
+  }
+]
