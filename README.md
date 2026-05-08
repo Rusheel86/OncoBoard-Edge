@@ -1,6 +1,17 @@
+---
+sdk: gradio
+app_file: app.py
+title: "OncoBoard-Edge"
+emoji: "🏥"
+colorFrom: "blue"
+colorTo: "green"
+license: mit
+tags: [healthcare, gradio, gemma-4, rag]
+---
+
 # 🏥 OncoBoard-Edge
 
-[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[Live Demo](https://rusheel86-oncoboard-edge.hf.space) • [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Research Grade](https://img.shields.io/badge/status-research%20grade-blue)](https://github.com)
 [![Offline-First](https://img.shields.io/badge/offline-first-brightgreen.svg)](https://github.com)

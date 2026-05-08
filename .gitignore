@@ -15,3 +15,13 @@ outputs/
 checkpoints/
 .DS_Store
 .oncoedge/
+# Local secrets and test artifacts
+.env
+.env.*
+.ssh/
+secrets/
+# Large model artifacts
+*.pth
+*.bin
+weights/
+models/
