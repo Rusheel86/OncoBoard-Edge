@@ -8,7 +8,7 @@ from typing import Any, Optional
 
 @dataclass(frozen=True)
 class ChromaConfig:
-    persist_dir: str = os.getenv("ONCO_CHROMA_DIR", os.path.join(".oncoedge", "chroma"))
+    persist_dir: str = os.getenv("ONCO_CHROMA_DIR", "chroma_db")
     collection_name: str = os.getenv("ONCO_CHROMA_COLLECTION", "oncoboard_guidelines")
 
 
